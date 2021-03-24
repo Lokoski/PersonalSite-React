@@ -1,12 +1,14 @@
-import React from 'react';
-import Header from './HeaderComponent';
-import ContactMe from './ContactMeComponent';
+import React from "react";
+// import Header from './HeaderComponent';
+// import ContactMe from './ContactMeComponent';
 import Footer from './FooterComponent';
-import Home from './HomeComponent';
-import Projects from './ProjectComponent';
+// import Home from './HomeComponent';
+// import Projects from './ProjectComponent';
 
-export default function Main () {
+function Main() {
     return(
-        <div>Personal Site</div>
+        <Footer />
     )
 }
+
+export default Main;
