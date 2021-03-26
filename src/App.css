@@ -1,38 +1,83 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+
+/******** COLOR VARIABLES ********/
+:root {
+  --primary-white: #fff;
+  --primary-black: #000;
+}
+body {
+  font-family: 'Gugi', cursive;
+  margin: 0;
+  box-sizing: border-box;
+}
+/******** NAVBAR STYLES ********/
+.nav-link {
+  font-size: 14px;
+  font-weight: 100;
+  color: #fff;
+  min-width: 88px;
+  line-height: 36px;
+  border-radius: 2px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* .nav-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer; 
+  border: none;
+} */
+
+.navbar {
+  background-color: rgba(88, 16, 16, 0.87);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+  height:4.3rem;
+  width:4.3rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar-nav > li > a {
+  color: var(--primary-black)!important; /* how to override bootstrap */
+  margin: 0 12px;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+} 
+
+.navbar-nav > li > a.active:focus {
+  border-bottom: 2px solid  var(--primary-black);
+}
+.navbar-nav > li > a:hover {
+  border-bottom: 2px solid  var(--primary-black);
 }
 
-.App-link {
-  color: #61dafb;
+/* .navbar-nav > li > a {
+  font-size: 1rem;
+  color: var(--primary-black);
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  font-weight: 700;
+  margin-right: 2rem;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-nav > li > a.active:hover, 
+.navbar-nav > li > a.active:focus {
+  background: none;
+  font-size: 1rem;
+  color: #262423;
 }
+
+.navbar-nav > li > a:hover:after, 
+.navbar-nav > li > a.active:focus:after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: .3rem;
+  background:  var(--primary-black);
+}
+  */
+
