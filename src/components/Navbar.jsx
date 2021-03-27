@@ -9,7 +9,7 @@ export default function Navbar() {
             <div className="container" >
                 <a className="navbar-brand" href="#"><img href="#" className="logo" src={logo} alt='logo'/></a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <FontAwesomeIcon className="hamburgerMenu"icon={faBars} style={{ color: "black" }}/>
+                    <FontAwesomeIcon className="hamburgerMenu" icon={faBars} style={{ color: 'rgba(138, 18, 18, 0.87)' }}/>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ml-auto">
