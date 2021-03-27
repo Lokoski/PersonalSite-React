@@ -5,13 +5,13 @@ const HeaderComponent = () => {
     return (
         <div className="header-wrapper">
             <div className="main-info">
-                <h1>Hi, I'm <span style={{color: 'rgba(138, 18, 18, 0.87)'}}>Alex Lokoski</span></h1>
+                <h1>Hi, I'm <span className="myName" style={{color: 'rgba(138, 18, 18, 0.87)'}}>Alex Lokoski</span></h1>
                 <Typed
                     className="typed"
-                    strings={['Im a full stack developer','Welcome to my website']}
-                    typeSpeed={40}
-                    backSpeed={50}
-                    backDelay={100}
+                    strings={["Welcome to my website","I'm a full-stack web developer"]}
+                    typeSpeed={60}
+                    backSpeed={70}
+                    backDelay={2000}
                 />
                 <a href="#" className="btn-portfolio">Portfolio</a>
             </div>

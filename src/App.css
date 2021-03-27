@@ -9,8 +9,9 @@
 }
 body {
   font-family: 'Gugi', cursive;
-  margin: 0;
-  box-sizing: border-box;
+  margin:0; 
+  padding:0; 
+  height:100%;
 }
 /******** NAVBAR STYLES ********/
 .nav-link {
@@ -41,7 +42,6 @@ body {
   height:4.3rem;
   width:4.3rem;
   margin-right: 2rem;
-  z-index: 2;
 }
 
 .navbar-nav > li > a {
@@ -93,15 +93,14 @@ body {
 
 /******** HEADER STYLES ********/
 
-.main{
-  position: relative;
+/* .main{
   background: black;
   height: 100vh;
-}
+} */
 
 .main-info{
   display:flex;
-  position: absolute;
+  /* position: absolute; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -110,6 +109,9 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
+  text-align: center;
+  background: black;
+  height: 100vh;
 }
 
 .main-info h1 {
@@ -118,9 +120,17 @@ body {
   margin-bottom: 5rem;
 }
 
+.myName {
+  font-size:3rem;
+}
+
 @media(max-width:768px) {
   .main-info h1 {
     font-size: 1.5rem !important
+  }
+
+  .myName {
+    font-size: 2rem !important
   }
 }
 
@@ -148,6 +158,7 @@ body {
   color: var(--primary-red);
   margin-bottom: 7rem;
   text-decoration: none;
+  z-index: 1;
 }
 
 .btn-portfolio:hover {
@@ -161,7 +172,34 @@ body {
 /******** PARTICLES STYLES(We get the class by inspecting the element) ********/
 
 .tsparticles-canvas-el {
-    position:absolute;
+    position: absolute;
     height: 100vh;
     width: 100vw;
+    z-index: 1;
+}
+
+/******** ABOUT ME STYLES ********/
+
+.photo-wrapper{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic {
+    width: 16rem;
+    border-radius: 50%;
+    padding: .3rem;
+    border: 1px solid var(--primary-red)
+}
+
+.about-heading {
+  text-transform: uppercase;
+  color: var(--primary-red);
+}
+
+@media (max-width: 468px) {
+  .profile-pic{
+    width: 8rem;
+  }
 }

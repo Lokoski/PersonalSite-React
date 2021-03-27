@@ -6,11 +6,11 @@ import Navbar from './Navbar'
 // import Home from './HomeComponent';
 // import Projects from './ProjectComponent';
 import Particles from 'react-particles-js'
+import AboutMe from './AboutMe'
 
-function Main() {
+const Main = () => {
     return(
         <div className="main">
-            <>
                 <Particles 
                     params={{ 
                         particles:{
@@ -33,7 +33,7 @@ function Main() {
                 />
                 <Navbar />
                 <Header />
-            </>
+                <AboutMe />
         </div>
     )
 }
