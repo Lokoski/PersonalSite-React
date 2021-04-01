@@ -1,28 +1,41 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
 
+#root, html, body {
+  height:100vh;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+
 /******** COLOR VARIABLES ********/
 :root {
   --primary-white: #fff;
   --primary-black: #000;
   --primary-red: rgba(138, 18, 18, 0.87);
+  --primary-gray: rgb(201, 197, 197);
+  --secondary-black: rgb(27, 27, 27);
 }
+
 body {
   font-family: 'Gugi', cursive;
   margin:0; 
-  padding:0; 
-  height:100%;
+}
+
+.main {
+  background: var(--primary-black)
 }
 /******** NAVBAR STYLES ********/
 .nav-link {
   font-size: 14px;
   font-weight: 100;
-  color: #fff;
-  min-width: 88px;
   line-height: 36px;
   border-radius: 2px;
   text-align: left;
 }
+
 
 /* .nav-link:hover {
   background: rgba(255, 255, 255, 0.1);
@@ -31,17 +44,33 @@ body {
 } */
 
 .navbar {
-  background-color: transparent;
   position:absolute;
   bottom:0;
   left:0;
   z-index: 2;
 }
 
+
+@media screen and (max-width: 989px) {
+  .navbar {
+    position:absolute;
+    bottom:0;
+    right:0;
+    z-index: 2;
+  }
+}
+
+.navbar-collapse {
+  background-color:var(--primary-black);
+  border-bottom: 1.25px  solid transparent
+}
+
+
 .logo {
   height:4.3rem;
   width:4.3rem;
   margin-right: 2rem;
+  z-index: 2;
 }
 
 .navbar-nav > li > a {
@@ -60,6 +89,12 @@ body {
   border-bottom: 2px solid  var(--primary-red);
 }
 
+/* .scrolled{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: lightblue;
+} */
 
 /* .navbar-nav > li > a {
   font-size: 1rem;
@@ -110,7 +145,7 @@ body {
   right: 0;
   bottom: 0;
   text-align: center;
-  background: black;
+  background:var(--primary-black);
   height: 100vh;
 }
 
@@ -118,28 +153,35 @@ body {
   color: var(--primary-white);
   text-transform: uppercase;
   margin-bottom: 5rem;
+  z-index: 1;
 }
 
 .myName {
-  font-size:3rem;
+  font-size:2.8rem;
 }
 
-@media(max-width:768px) {
+@media screen and (max-width:768px) {
   .main-info h1 {
     font-size: 1.5rem !important
   }
 
   .myName {
-    font-size: 2rem !important
+    font-size: 1.5rem !important
+  }
+
+  .navbar-link > li > a {
+    color:rgb(201, 197, 197)
   }
 }
+
 
 /******** TYPED STYLES ********/
 
 .typed {
     margin-bottom: 5rem;
     font-size: 3rem;
-    color:var(--primary-red)
+    color:var(--primary-red);
+    z-index:2;
 }
 
 @media(max-width:768px) {
@@ -152,20 +194,21 @@ body {
 
 .btn-portfolio {
   border: 1px solid var(--primary-red);
-  padding: 12px;
+  padding: 18px;
   text-transform: uppercase;
   border-radius: 0;
   color: var(--primary-red);
   margin-bottom: 7rem;
   text-decoration: none;
   z-index: 1;
+  font-size: 1.5rem;
 }
 
 .btn-portfolio:hover {
     text-decoration: none;
     background-color: var(--primary-red);
     color: var(--primary-black);
-    transition: .2s ease-in-out;
+    transition: .3s ease-in-out;
 }
 
 
@@ -175,31 +218,235 @@ body {
     position: absolute;
     height: 100vh;
     width: 100vw;
-    z-index: 1;
 }
+
 
 /******** ABOUT ME STYLES ********/
 
 .photo-wrapper{
+  background:var(--primary-black);
   display:flex;
   justify-content: center;
   align-items: center;
+  margin-top: 1.5rem;
 }
 
 .profile-pic {
     width: 16rem;
     border-radius: 50%;
     padding: .3rem;
-    border: 1px solid var(--primary-red)
+    border: 1px solid var(--primary-red);
+    
 }
 
 .about-heading {
   text-transform: uppercase;
   color: var(--primary-red);
+  margin: 1rem 0;
+  display: flex;
+  justify-content: left;
 }
+
+.about-heading::after {
+  content: '';
+  flex: 1;
+  margin-left: .5rem;
+  margin-top: 1.25rem;
+  height: 3px;
+  background-color:var(--primary-red);
+}
+
+.about-p{
+  color: var(--primary-gray);
+  font-size: 1rem;
+}
+
 
 @media (max-width: 468px) {
   .profile-pic{
     width: 8rem;
   }
 }
+@media (max-width: 768px) {
+  .photo-wrapper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+  }
+
+  .about-p{
+    margin: .75rem;
+  }
+}
+
+/******** SKILLS STYLES ********/
+
+.skills-heading {
+  text-transform: uppercase;
+  color: var(--primary-red);
+  margin: 1rem -30px;
+  display: flex;
+  justify-content: left;
+}
+
+.skills-heading::after {
+  content: '';
+  flex: 1;
+  margin-left: .5rem;
+  margin-right: 30px;
+  margin-top: 1.25rem;
+  height: 3px;
+  background-color:var(--primary-red);
+}
+
+@media screen and (max-width: 980px) {
+  .skills-heading::after{
+    margin-right: 0;
+  }
+}
+
+.skills:hover {
+  font-size:1.1rem;
+  color: var(--primary-red);
+}
+
+#logo-holder {position:relative; width:2rem; height:2rem; /*dimensions of image*/}
+#logo-holder .text,
+#logo-holder .image {transition: opacity 0.2s ease-in-out;}
+#logo-holder .image {position:absolute; top:0; left:0; opacity:0;}
+
+#logo-holder:hover .image {
+  opacity:1;
+  margin-top:0;
+  padding: 0;
+}
+#logo-holder:hover .text {opacity:0;}
+
+.image{
+  height: 2.5rem;
+  width:2.5rem; 
+  background: white;
+}
+
+.text {
+  font-size: 0.9rem !important
+}
+
+.skills-col-fe {
+  padding-top: 18px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skills-col-be {
+  padding-top: 32px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color:var(--primary-black);
+  border: 1px solid var(--primary-red);
+}
+
+.card > h1 {
+  color:var(--primary-red);
+  display:flex;
+  align-items: center;
+}
+
+.card > ul > li {
+  color:var(--primary-gray);
+  list-style-type: none;
+  padding: 0.75rem;
+}
+
+/******** PORTFOLIO STYLES ********/
+
+.portfolio-wrapper{
+  padding: 3rem 0;
+}
+
+.portfolio-header{
+color: var(--primary-white)
+}
+
+.portfolio-image{
+  width: 28rem;
+  height: 19rem;
+  border: 1px solid var(--primary-red);
+  padding: 0.3rem;
+  margin: 0.75rem;
+  background-color: var(--primary-white)
+}
+
+.portfolio-image-box{
+  position:relative;
+  margin: 1rem;
+}
+
+/******** OVERFLOW STYLES ********/
+
+.overflow {
+  position: absolute;
+  opacity: 0;
+  background: var(--primary-white);
+  width: 28rem;
+  height: 19rem;
+  top:0;
+  border: 1px solid var(--primary-red);
+  cursor: pointer;
+  padding: 0.3rem;
+  margin: 0.75rem;
+}
+
+.portfolio-image-box:hover .overflow{
+  opacity: 50%;
+  transition: 0.3s ease-in-out
+}
+
+.portfolio-icon {
+  position:absolute;
+  opacity: 0;
+  margin-left: -16rem;
+  margin-top: 9rem;
+  color: var(--primary-red);
+  font-size: 1.5rem;
+}
+
+.portfolio-image-box:hover .portfolio-icon{
+  opacity: 70%;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/******** POPUP STYLES ********/
+
+.portfolio-image-popup {
+  width: 45rem;
+  height: 35rem;
+  margin-left: 3rem;
+}
+
+@media screen and (max-width:980px){
+  .portfolio-image-popup {
+    width: 21rem;
+    height: 10rem;
+    margin: 0;
+  }
+}
+
+.hyperlink {
+  cursor: pointer;
+  color: var(--primary-red)
+}
+
+.hyperlink:hover {
+  cursor: pointer;
+  color: var(--primary-black)
+}
+
