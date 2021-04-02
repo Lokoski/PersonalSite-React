@@ -21,7 +21,8 @@ function Portfolio() {
     return (
         <div className="portfolio-wrapper" id="projects">
             <div className="container">
-                <h1 className="text-uppercase text-center py-5 portfolio-header">portfolio projects</h1>
+                <h1 className="text-uppercase text-center py-5 portfolio-header">My projects</h1>
+                <div className="break-line"></div>
                 <div className="img-box-wrapper row justify-content-center">
                     <div className="portfolio-image-box" onClick={openPersonal}>
                         <img src={PersonalSite} alt="portfolioimage" className="portfolio-image"/>

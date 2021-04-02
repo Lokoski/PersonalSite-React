@@ -17,6 +17,7 @@
   --primary-red: rgba(138, 18, 18, 0.87);
   --primary-gray: rgb(201, 197, 197);
   --secondary-black: rgb(27, 27, 27);
+  --primary-green: rgb(5, 204, 15);
 }
 
 body {
@@ -73,6 +74,7 @@ body {
   z-index: 2;
 }
 
+
 .navbar-nav > li > a {
   color: var(--primary-red)!important; /* how to override bootstrap */
   margin: 0 12px;
@@ -88,50 +90,6 @@ body {
 .navbar-nav > li > a:hover {
   border-bottom: 2px solid  var(--primary-red);
 }
-
-/* .scrolled{
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: lightblue;
-} */
-
-/* .navbar-nav > li > a {
-  font-size: 1rem;
-  color: var(--primary-black);
-  text-transform: uppercase;
-  letter-spacing: .1rem;
-  font-weight: 700;
-  margin-right: 2rem;
-  position: relative;
-}
-
-.navbar-nav > li > a.active:hover, 
-.navbar-nav > li > a.active:focus {
-  background: none;
-  font-size: 1rem;
-  color: #262423;
-}
-
-.navbar-nav > li > a:hover:after, 
-.navbar-nav > li > a.active:focus:after {
-  content: "";
-  position: absolute;
-  display: block;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: .3rem;
-  background:  var(--primary-black);
-}
-  */
-
-/******** HEADER STYLES ********/
-
-/* .main{
-  background: black;
-  height: 100vh;
-} */
 
 .main-info{
   display:flex;
@@ -311,19 +269,27 @@ body {
   color: var(--primary-red);
 }
 
-#logo-holder {position:relative; width:2rem; height:2rem; /*dimensions of image*/}
+#logo-holder {
+  position:relative; width:2rem; height:2rem;
+}
 #logo-holder .text,
-#logo-holder .image {transition: opacity 0.2s ease-in-out;}
-#logo-holder .image {position:absolute; top:0; left:0; opacity:0;}
+#logo-holder .image {
+  transition: opacity 0.2s ease-in-out;
+}
+#logo-holder .image {
+  position:absolute; top:0; left:0; opacity:0;
+}
 
 #logo-holder:hover .image {
   opacity:1;
   margin-top:0;
   padding: 0;
 }
-#logo-holder:hover .text {opacity:0;}
+#logo-holder:hover .text {
+  opacity:0;
+}
 
-.image{
+.image {
   height: 2.5rem;
   width:2.5rem; 
   background: white;
@@ -372,7 +338,7 @@ body {
 }
 
 .portfolio-header{
-color: var(--primary-white)
+color: var(--primary-red)
 }
 
 .portfolio-image{
@@ -449,4 +415,131 @@ color: var(--primary-white)
   cursor: pointer;
   color: var(--primary-black)
 }
+
+
+/******** CONTACT STYLES ********/
+
+.contact{
+  padding: 3rem 0;
+}
+
+.contact h1 {
+  color: var(--primary-red);
+  padding: 1.3rem 0;
+  text-transform: uppercase;
+}
+
+.contact p {
+  color: var(--primary-white);
+  font-size: 1.2rem;
+}
+
+/******** INPUTS STYLES ********/
+
+.break-line {
+  border: 1px solid var(--primary-red);
+  width: 70%;
+  margin: auto;
+}
+
+.contact input, .contact textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  resize: none;
+  border: 0;
+  border-bottom: 2px solid var(--primary-white);
+  border-radius: 0;
+  color: var(--primary-red);
+  outline: 0 !important;
+  box-shadow: none !important;
+  margin-bottom: 1rem ;
+  padding-left: 0 !important;
+}
+
+.contact .container {
+  margin-top: 4rem;
+  padding: 3rem;
+  border: 2px solid var(--primary-white);
+}
+
+.contact input:focus, .contact textarea:focus {
+  background: transparent;
+  color: var(--primary-red);
+  border-bottom: 2px solid var(--primary-white);
+}
+
+.contact textarea {
+  height: 9rem !important;
+}
+
+.contact-btn {
+  border: 1px solid var(--primary-red);
+  padding: 8px;
+  text-transform: uppercase;
+  color: var(--primary-red);
+  width:100%;
+  font-size: 1rem;
+  background:none;
+}
+
+.contact-btn:hover {
+  text-decoration: none;
+  background-color: var(--primary-red);
+  color: var(--primary-black);
+  transition: .3s ease-in-out;
+}
+
+.line {
+  position: relative;
+  top: -0.8rem;
+  width: 0;
+  height: 3px;
+  background: var(--primary-red);
+  display:inline-block;
+}
+
+input:focus+.line, textarea:focus+.line {
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+input.form-control {
+  margin: -0.3rem 0;
+}
+
+textarea.form-control {
+  margin: -0.3rem 0;
+}
+
+.form-control{
+  margin-top:.5rem;
+}
+
+.error-message{
+  color: var(--primary-red);
+  text-align:left;
+}
+
+.success-message {
+  font-weight: 600;
+  font-size:3rem;
+  color: var(--primary-green)
+}
+
+@media screen and (max-width:768px ){
+
+  .contact {
+    overflow-x: hidden;
+  }
+
+  .contact .container {
+    padding: 0 1rem;
+  }
+
+  .contact p {
+    padding: 0 0.4rem;
+  }
+}
+
 

@@ -6,22 +6,27 @@ import { Link } from 'react-scroll'
 
 export default function Navbar() {
   const [stuck, setStuck] = useState(false);
+
+  //Navbar shows up on scroll
+
   useEffect(() => {
     window.addEventListener("scroll", (e) => {
       if (stuck === false) {
-        if (window.pageYOffset > 725) {
+        if (window.pageYOffset > 715) {
           setStuck(true);
         }
       } else {
-        if (window.pageYOffset < 725) {
+        if (window.pageYOffset < 715) {
           setStuck(false);
         }
       }
     });
   }, [stuck]);
 
+ 
 
   return (
+
     <nav
       className="navbar navbar-expand-lg navbar-light"
       style={
@@ -37,9 +42,8 @@ export default function Navbar() {
                 transition: ".3s ease-in-out",
                 padding:"0 10px",
                 color:'#000',
-
             }
-          : { left: "0" ? "0" : "-100%" }
+          : {}
       }
     >
       <div className="container">

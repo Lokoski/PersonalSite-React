@@ -14,7 +14,7 @@ const HeaderComponent = () => {
                     backSpeed={70}
                     backDelay={2000}
                 />
-                <Link to='projects' offset={-50} smooth={true} href="#" className="btn-portfolio">Portfolio</Link>
+                <Link to='projects' offset={-50} smooth={true} href="#" className="btn-portfolio">View my work</Link>
             </div>
         </div>
     )
