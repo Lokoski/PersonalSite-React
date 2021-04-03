@@ -52,7 +52,7 @@ function ContactMe() {
                         <input
                             type="text"
                             className="form-control"
-                            placeholder="Name"
+                            placeholder="Your Name"
                             name="name"
                             ref={
                                 register({
@@ -73,7 +73,7 @@ function ContactMe() {
                         <input
                             type="text"
                             className="form-control"
-                            placeholder="Email"
+                            placeholder="Your Email"
                             name="email"
                             ref={
                                 register({

@@ -14,18 +14,18 @@ function AboutMe() {
         <div className="col-lg-5 col-xm-12">
           <h1 className="about-heading">About Me</h1>
           <p className="about-p">
-                Hi, my name is Alex Lokoski and I’m a full stack developer! I was
+            Hi, my name is Alex Lokoski and I’m a full stack developer! I was
             first introduced to coding while trying to create a website for my
-            fitness business and I haven’t looked back ever since. I'm curios,
-            driven team player, who’s always looking to improve. As a web
-            developer, I’m comfortable working with JavaScript, ReactJS, Redux,
-            HTML, CSS, Sass, Bootstrap and React-native for the front end, and NodeJS, 
-            Express and MongoDB for the back end. 
+            fitness business and I haven’t looked back since. I'm a curious,
+            driven team player, who is always looking to improve. As a web
+            developer, I have experience working with JavaScript, ReactJS, Redux,
+            HTML, CSS, Sass, Bootstrap, and React-native for the front end. I'm also
+            comfortable with NodeJS, Express and MongoDB for back end development. 
             <br/>
             <br/>
                 Outside of coding, I’m that
             annoying friend that’s always looking to do something new. I also
-            have my own fitness business and I’m very passionate about helping
+            have my own fitness business and am very passionate about helping
             people to achieve their fitness goals and live their best life!
           </p>
         </div>
@@ -36,7 +36,7 @@ function AboutMe() {
           </div>
         <div className="row skills-row">
             <div className="col-lg col-xm-12 skills-col-fe card m-5">
-                <h1>Front-End</h1>
+                <h1 className="technologies">Front-End</h1>
                 <ul>
                     <li className="skills">HTML</li>
                     <li className="skills">
@@ -56,14 +56,14 @@ function AboutMe() {
                 {/*---*/}
             </div>
             <div className="col-lg col-xm-12 skills-col-be card m-5">
-                <h1>Back-End</h1>
+                <h1 className="technologies">Back-End</h1>
                 <ul>
                     <li className="skills">NodeJS</li>
                     <li className="skills">Express</li>
                     <li className="skills">MongoDB</li>
                     <li className="skills">Mongoose</li>
                 </ul>
-                <h1>Technologies</h1>
+                <h1 className="technologies">Technologies</h1>
                 <ul>
                     <li className="skills">Github</li>
                     <li className="skills">Webpack</li>
@@ -71,8 +71,6 @@ function AboutMe() {
                 </ul>
             </div>
             <div id="logo-holder">
-    <img src={css} className="image" />
-    <div class="text">text</div>
 </div>
         </div>
     </div>

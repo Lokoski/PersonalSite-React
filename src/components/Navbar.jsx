@@ -22,16 +22,14 @@ export default function Navbar() {
       }
     });
   }, [stuck]);
-
  
 
   return (
-
     <nav
       className="navbar navbar-expand-lg navbar-light"
       style={
         stuck
-          ? {
+          ? { 
                 position: "fixed",
                 top: "0",
                 width: "100%",
@@ -41,14 +39,14 @@ export default function Navbar() {
                 height: "10%",
                 transition: ".3s ease-in-out",
                 padding:"0 10px",
-                color:'#000',
-            }
-          : {}
+                color:'#000'            }
+          : { left: '0' ? '0' : '-100%' }
       }
     >
+    
       <div className="container">
         <Link to='home' smooth={true} className="navbar-brand" href="#">
-          <img href="#" className="logo" src={logo} alt="logo" />
+          <img href="/home" className="logo" src={logo} alt="logo" />
         </Link>
         <button
           className="navbar-toggler"
@@ -68,22 +66,22 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
-              <Link to='home'  smooth={true} className="nav-link" href="#">
+              <Link to='home' eventKey="1" smooth={true} className="nav-link" href="home">
                 Home<span className="sr-only">(current)</span>
               </Link>
             </li>
             <li className="nav-item">
-              <Link to='about' offset={-40}  smooth={true} className="nav-link" href="#">
+              <Link to='about' offset={-40} eventKey="2" smooth={true} className="nav-link" href="about">
                 About me
               </Link>
             </li>
             <li className="nav-item">
-              <Link to='projects' offset={-50} smooth={true} className="nav-link" href="#">
+              <Link to='projects'  offset={-50} eventKey="3" smooth={true} className="nav-link" href="projects">
                 Projects
               </Link>
             </li>
             <li className="nav-item">
-              <Link to='contact'  smooth={true} className="nav-link" href="#">
+              <Link to='contact'  offset={-50} eventKey="4" smooth={true} className="nav-link" href="contact">
                 Contact Me
               </Link>
             </li>
@@ -93,3 +91,4 @@ export default function Navbar() {
     </nav>
   );
 }
+

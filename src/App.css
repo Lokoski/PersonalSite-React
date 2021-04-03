@@ -26,7 +26,7 @@ body {
 }
 
 .main {
-  background: var(--primary-black)
+  background: var(--primary-black);
 }
 /******** NAVBAR STYLES ********/
 .nav-link {
@@ -52,6 +52,7 @@ body {
 }
 
 
+
 @media screen and (max-width: 989px) {
   .navbar {
     position:absolute;
@@ -65,6 +66,26 @@ body {
   background-color:var(--primary-black);
   border-bottom: 1.25px  solid transparent
 }
+
+/* @media screen and (max-width: 450px) {
+  .navbar {
+    position:absolute;
+    bottom:0;
+    right:0;
+    z-index: 2;
+    width: 80%;
+    overflow-x: hidden;
+  }
+}
+
+.navbar-collapse {
+  background-color:var(--primary-black);
+  border-bottom: 1.25px  solid transparent;
+  width:80%;
+  overflow-x: hidden;
+} */
+
+
 
 
 .logo {
@@ -105,6 +126,7 @@ body {
   text-align: center;
   background:var(--primary-black);
   height: 100vh;
+  margin-top: -2rem;
 }
 
 .main-info h1 {
@@ -118,6 +140,11 @@ body {
   font-size:2.8rem;
 }
 
+.social-top > a {
+  z-index: 2;
+  margin:0 1rem 0 0;
+}
+
 @media screen and (max-width:768px) {
   .main-info h1 {
     font-size: 1.5rem !important
@@ -129,6 +156,13 @@ body {
 
   .navbar-link > li > a {
     color:rgb(201, 197, 197)
+  }
+
+}
+
+@media screen and (max-width:900px){
+  .social-top > a {
+    display: none;
   }
 }
 
@@ -222,9 +256,11 @@ body {
 
 @media (max-width: 468px) {
   .profile-pic{
-    width: 8rem;
+    width: 10rem;
   }
 }
+
+
 @media (max-width: 768px) {
   .photo-wrapper{
     display:flex;
@@ -263,6 +299,19 @@ body {
     margin-right: 0;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .technologies{
+      font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .technologies{
+      font-size: 1.25rem;
+  }
+}
+
 
 .skills:hover {
   font-size:1.1rem;
@@ -355,6 +404,12 @@ color: var(--primary-red)
   margin: 1rem;
 }
 
+@media screen and (max-width:420px){
+  .portfolio-image {
+    width: 95%;
+  }
+}
+
 /******** OVERFLOW STYLES ********/
 
 .overflow {
@@ -368,6 +423,7 @@ color: var(--primary-red)
   cursor: pointer;
   padding: 0.3rem;
   margin: 0.75rem;
+  width: 95%;
 }
 
 .portfolio-image-box:hover .overflow{
@@ -404,6 +460,8 @@ color: var(--primary-red)
     height: 10rem;
     margin: 0;
   }
+
+
 }
 
 .hyperlink {
@@ -461,6 +519,7 @@ color: var(--primary-red)
   margin-top: 4rem;
   padding: 3rem;
   border: 2px solid var(--primary-white);
+  background:rgb(27, 27, 27);
 }
 
 .contact input:focus, .contact textarea:focus {
@@ -534,7 +593,7 @@ textarea.form-control {
   }
 
   .contact .container {
-    padding: 0 1rem;
+    padding:1rem;
   }
 
   .contact p {
@@ -542,4 +601,39 @@ textarea.form-control {
   }
 }
 
+/******** FOOTER STYLES ********/
+
+.footer-btn{
+  height:15rem;
+  width: 15rem;
+}
+
+.footer-row {
+  margin: 2rem 10rem 0 10rem;
+}
+
+@media screen and (max-width:770px){
+.footer-row > a > .btn {
+  margin:0;
+  padding:0;
+}
+}
+
+
+.fa {
+  color: var(--primary-red);
+}
+
+.fa:hover {
+    cursor: pointer; 
+    -moz-transition: all 0.3s ease;
+    transition: all 0.7s ease-in-out;
+
+      transform: scale(1.2);
+      transform: rotate(0deg) scale(1);
+      opacity: 1;
+      transform: rotate(360deg) scale(1);
+      opacity: 1;
+      
+}
 

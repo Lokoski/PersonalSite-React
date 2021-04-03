@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import Home from './HomePage';
 import ContactMe from './ContactMe';
-//import Footer from './FooterComponent';
+import Footer from './Footer';
 import Navbar from './Navbar'
-//import MySkills from './MySkills';
+
 import Portfolio from './Portfolio';
 import Particles from 'react-particles-js'
 import AboutMe from './AboutMe'
@@ -75,6 +75,7 @@ const Main = () => {
                 <AboutMe />
                 <Portfolio />
                 <ContactMe />
+                <Footer />
         </div>
     )
 }
