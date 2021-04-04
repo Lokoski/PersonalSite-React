@@ -2,11 +2,12 @@ import React from "react";
 import Home from './HomePage';
 import ContactMe from './ContactMe';
 import Footer from './Footer';
-import Navbar from './Navbar'
-
+//import Navbar from './Navbar'
 import Portfolio from './Portfolio';
 import Particles from 'react-particles-js'
 import AboutMe from './AboutMe'
+import ReactstrapNav from './ReactstrapNav'
+
 
 
 
@@ -51,26 +52,8 @@ const Main = () => {
                         }
                     }}
                 />
-                {/* <Particles
-    params={{
-	    "particles": {
-	        "number": {
-	            "value": 50
-	        },
-	        "size": {
-	            "value": 3
-	        }
-	    },
-	    "interactivity": {
-	        "events": {
-	            "onhover": {
-	                "enable": true,
-	                "mode": "repulse"
-	            }
-	        }
-	    }
-	}} /> */}
-                <Navbar />
+                {/* <Navbar /> */}
+                <ReactstrapNav />
                 <Home />
                 <AboutMe />
                 <Portfolio />

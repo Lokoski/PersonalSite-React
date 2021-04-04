@@ -9,16 +9,16 @@ const HeaderComponent = () => {
             <a
                 target="_blank"
                 rel="noreferrer"
-                className="btn btn-social-icon btn-linkedin "
+                className="btn btn-social-icon btn-linkedin icon-hover "
                 href="http://linked.com/in/alexlokoski"
             >
-            <i className="fa fa-linkedin fa-3x" />
+            <i className="fa fa-linkedin fa-3x " />
             </a>
             {" "}
             <a
                 target="_blank"
                 rel="noreferrer"
-                className="btn btn-social-icon btn-github "
+                className="btn btn-social-icon btn-github icon-hover "
                 href="http://github.com/lokoski"
             >
             <i className="fa fa-github fa-3x" />
@@ -27,10 +27,10 @@ const HeaderComponent = () => {
             <a
                 target="_blank"
                 rel="noreferrer"
-                className="btn btn-social-icon btn-twitter"
+                className="btn btn-social-icon btn-twitter icon-hover"
                 href="http://twitter.com/lokoski"
             >
-            <i className="fa fa-twitter fa-3x" />
+            <i className="fa fa-twitter fa-3x " />
             </a>{" "}
             </div>
             <div className="main-info">

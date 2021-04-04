@@ -39,7 +39,8 @@ export default function Navbar() {
                 height: "10%",
                 transition: ".3s ease-in-out",
                 padding:"0 10px",
-                color:'#000'            }
+                color:'#000',
+            }
           : { left: '0' ? '0' : '-100%' }
       }
     >

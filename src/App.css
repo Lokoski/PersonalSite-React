@@ -9,6 +9,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  
+}
+
 
 /******** COLOR VARIABLES ********/
 :root {
@@ -35,6 +40,13 @@ body {
   line-height: 36px;
   border-radius: 2px;
   text-align: left;
+  margin: 0;
+}
+
+.nav-item{
+  padding:0;
+  margin: 0;
+  background: var(--primary-black)
 }
 
 
@@ -67,26 +79,6 @@ body {
   border-bottom: 1.25px  solid transparent
 }
 
-/* @media screen and (max-width: 450px) {
-  .navbar {
-    position:absolute;
-    bottom:0;
-    right:0;
-    z-index: 2;
-    width: 80%;
-    overflow-x: hidden;
-  }
-}
-
-.navbar-collapse {
-  background-color:var(--primary-black);
-  border-bottom: 1.25px  solid transparent;
-  width:80%;
-  overflow-x: hidden;
-} */
-
-
-
 
 .logo {
   height:4.3rem;
@@ -99,9 +91,13 @@ body {
 .navbar-nav > li > a {
   color: var(--primary-red)!important; /* how to override bootstrap */
   margin: 0 12px;
+
   text-transform: uppercase;
   border-bottom: 1px solid transparent;
 } 
+.navbar-nav{
+  margin-top: 0!important;
+}
 
 .navbar-nav > li > a.active:focus {
   border-bottom: 2px solid  var(--primary-red);
@@ -112,6 +108,10 @@ body {
   border-bottom: 2px solid  var(--primary-red);
 }
 
+.icon-hover:hover{
+  transform: scale(1.4);
+  transition: all 0.5s ease-in-out;
+}
 .main-info{
   display:flex;
   /* position: absolute; */
@@ -312,14 +312,27 @@ body {
   }
 }
 
+.skills{
+  color:var(--primary-gray);
+  list-style-type: none;
+  padding: 0.75rem;
+}
+
 
 .skills:hover {
   font-size:1.1rem;
   color: var(--primary-red);
+  transform: scale(1.4);
 }
 
-#logo-holder {
-  position:relative; width:2rem; height:2rem;
+.image {
+  height: 3rem;
+  width: 3rem;
+}
+
+
+/* #logo-holder {
+  position:relative; width:3rem; height:3rem;
 }
 #logo-holder .text,
 #logo-holder .image {
@@ -336,32 +349,18 @@ body {
 }
 #logo-holder:hover .text {
   opacity:0;
-}
+} */
 
-.image {
-  height: 2.5rem;
-  width:2.5rem; 
-  background: white;
-}
-
-.text {
-  font-size: 0.9rem !important
-}
 
 .skills-col-fe {
-  padding-top: 18px;
+  padding:20px;
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color:var(--primary-red);
 }
-.skills-col-be {
-  padding-top: 32px;
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .card {
   background-color:var(--primary-black);
@@ -624,7 +623,7 @@ textarea.form-control {
   color: var(--primary-red);
 }
 
-.fa:hover {
+.spin:hover {
     cursor: pointer; 
     -moz-transition: all 0.3s ease;
     transition: all 0.7s ease-in-out;
@@ -636,4 +635,106 @@ textarea.form-control {
       opacity: 1;
       
 }
+
+
+
+/******** CARDS STYLES ********/
+
+.containerSkills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 30px 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.cardsGrid {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 50px;
+
+  
+}
+
+@media (min-width: 850px) {
+  .cardWrapper {
+    margin: 0 16px;
+  }
+}
+
+
+.cardWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  height:100%;
+}
+  .cardWrapper > h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    height: 100%;
+    width:100%;
+    align-items: space-between;
+  }
+
+  .card {
+    margin: 16px 0 30px;
+    background-color: var(--primary-black);
+    border-radius: 10px;
+    padding: 10px 8px 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+    .row {
+      flex: 1;
+      display: flex;
+      justify-content: space-around;
+      margin-top:1rem;
+    }
+
+    .languageImage{
+      height:4rem;
+      width:4rem;
+    }
+
+    @media screen and (max-width:1100px){
+      .languageImage{
+        height:3rem;
+        width:3rem;
+      }
+    }
+
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: 0.2s;
+        margin:1rem 4rem;
+        padding:0rem;
+        
+      }
+
+      .item:hover{
+        transform: scale(1.5);
+        transition: all 0.7s ease-in-out;
+      }
+
+      .item > h2 {
+          color: var(--primary-red);
+          text-align: center;
+          margin-top: 8px;
+          font-size: 1rem;
+        }
+
+        .item > h2 {
+          transform: scale(1.5);
+        }
+
 

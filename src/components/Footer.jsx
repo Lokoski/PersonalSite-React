@@ -13,7 +13,7 @@ function Footer() {
               className="btn btn-social-icon btn-linkedin col-md col-sm-12"
               href="https://www.linkedin.com/in/alexlokoski/"
             >
-              <i className="fa fa-linkedin fa-3x" />
+              <i className="fa fa-linkedin fa-3x spin" />
             </a>
             {" "}
             <a
@@ -22,7 +22,7 @@ function Footer() {
               className="btn btn-social-icon btn-github col-md col-sm-12"
               href="http://github.com/lokoski"
             >
-              <i className="fa fa-github fa-3x" />
+              <i className="fa fa-github fa-3x spin" />
             </a>
             {" "}
             <a
@@ -31,7 +31,7 @@ function Footer() {
               className="btn btn-social-icon btn-twitter col-md col-sm-12"
               href="http://twitter.com/alexlokoski"
             >
-              <i className="fa fa-twitter fa-3x" />
+              <i className="fa fa-twitter fa-3x spin" />
             </a>{" "}
           </div>
           <p className="p-4 text-center">

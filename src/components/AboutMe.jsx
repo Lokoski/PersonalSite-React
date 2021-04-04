@@ -1,6 +1,5 @@
 import React from "react";
 import picture from "../img/Me.png";
-import css from "../img/css3.svg"
 
 function AboutMe() {
   return (
@@ -30,52 +29,102 @@ function AboutMe() {
           </p>
         </div>
       </div>
+
+      {/*-------SKILLS-------*/}
+
       <div className="container">
         <div className="col-lg-5 col-xm-12 ">
           <h1 className="skills-heading">toolbox</h1>
           </div>
         <div className="row skills-row">
-            <div className="col-lg col-xm-12 skills-col-fe card m-5">
-                <h1 className="technologies">Front-End</h1>
-                <ul>
-                    <li className="skills">HTML</li>
-                    <li className="skills">
-                      <div id="logo-holder">
-                        <img src={css} className="image" alt="css"/>
-                        <div class="text">CSS</div>
-                      </div>
-                    </li>
-                    <li className="skills">SCSS</li>
-                    <li className="skills">Bootstrap</li>
-                    <li className="skills">JavaScript</li>
-                    <li className="skills">React</li>
-                    <li className="skills">Redux</li>
-                    <li className="skills">React-native</li>
-                </ul>
-                
-                {/*---*/}
+        <div className="col-lg-5 col-xm-12 skills-col-be card">
+          <div className="cardWrapper">
+            <div className="">
+              <h1 className="skills-col-fe">Front-end</h1>
+              <div className="row">
+                <div className="item">
+                  <img src="/icons/icon_html.svg" alt="html" className="languageImage"/>
+                  <h2>NodeJs</h2>
+                </div>
+
+                <div className="item">
+                  <img src="/icons/icon_css.svg" alt="css3" className="languageImage"/>
+                  <h2>CSS</h2>
+                </div>
+              </div>
+
+              <div className="row">
+                <div className="item">
+                  <img src="/icons/icon_javascript.svg" alt="js" className="languageImage"/>
+                  <h2>JavaScript</h2>
+                </div>
+              </div>
+              <div className="row">
+                <div className="item">
+                  <img src="/icons/icon_react.svg" alt="react" className="languageImage"/>
+                  <h2>React</h2>
+                </div>
+
+                <div className="item">
+                  <img src="/icons/icon_redux.svg" alt="redux" className="languageImage"/>
+                  <h2>Redux</h2>
+                </div>
+              </div>
+              <div className="row">
+                <div className="item">
+                  <img src="/icons/icon_sass.svg" alt="scss" className="languageImage"/>
+                  <h2>SASS</h2>
+                </div>
+              </div>
             </div>
-            <div className="col-lg col-xm-12 skills-col-be card m-5">
-                <h1 className="technologies">Back-End</h1>
-                <ul>
-                    <li className="skills">NodeJS</li>
-                    <li className="skills">Express</li>
-                    <li className="skills">MongoDB</li>
-                    <li className="skills">Mongoose</li>
-                </ul>
-                <h1 className="technologies">Technologies</h1>
-                <ul>
-                    <li className="skills">Github</li>
-                    <li className="skills">Webpack</li>
-                    <li className="skills">Git</li>
-                </ul>
+          </div>
             </div>
-            <div id="logo-holder">
-</div>
+            <div className="col-lg-5 col-xm-12 skills-col-be card">
+          <div className="cardWrapper">
+            <div className="">
+              <h1 className="skills-col-fe">Back-end</h1>
+              <div className="row">
+                <div className="item">
+                  <img src="/icons/icon_nodejs.svg" alt="nodejs" className="languageImage"/>
+                  <h2>NodeJs</h2>
+                </div>
+
+                <div className="item">
+                  <img src="/icons/icon_express.svg" alt="express" className="languageImage"/>
+                  <h2>Express</h2>
+                </div>
+              </div>
+
+              <div className="row">
+                <div className="item">
+                  <img src="/icons/icon_mongodb.svg" alt="mongodb" className="languageImage"/>
+                  <h2>MongoDB</h2>
+                </div>
+              </div>
+              <h1 className="skills-col-fe">Technologies</h1>
+              <div className="row">
+                <div className="item">
+                  <img src="/icons/icon_git.svg" alt="git" className="languageImage"/>
+                  <h2>Git</h2>
+                </div>
+
+                <div className="item">
+                  <img src="/icons/icon_github.svg" alt="github" className="languageImage" />
+                  <h2>GitHub</h2>
+                </div>
+              </div>
+              <div className="row">
+                <div className="item">
+                  <img src="/icons/icon_webpack.svg" alt="webpack" className="languageImage"/>
+                  <h2>Webpack</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+            </div>
         </div>
-    </div>
-    </div>
-    
+    </div>    
   );
 };
 
