@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/PersonalSite-React/static/css/main.12287b01.chunk.css",
+    "main.js": "/PersonalSite-React/static/js/main.d6eb095e.chunk.js",
+    "main.js.map": "/PersonalSite-React/static/js/main.d6eb095e.chunk.js.map",
+    "runtime-main.js": "/PersonalSite-React/static/js/runtime-main.c10afdb9.js",
+    "runtime-main.js.map": "/PersonalSite-React/static/js/runtime-main.c10afdb9.js.map",
+    "static/css/2.540a705e.chunk.css": "/PersonalSite-React/static/css/2.540a705e.chunk.css",
+    "static/js/2.3014e4b8.chunk.js": "/PersonalSite-React/static/js/2.3014e4b8.chunk.js",
+    "static/js/2.3014e4b8.chunk.js.map": "/PersonalSite-React/static/js/2.3014e4b8.chunk.js.map",
+    "index.html": "/PersonalSite-React/index.html",
+    "static/css/2.540a705e.chunk.css.map": "/PersonalSite-React/static/css/2.540a705e.chunk.css.map",
+    "static/css/main.12287b01.chunk.css.map": "/PersonalSite-React/static/css/main.12287b01.chunk.css.map",
+    "static/js/2.3014e4b8.chunk.js.LICENSE.txt": "/PersonalSite-React/static/js/2.3014e4b8.chunk.js.LICENSE.txt",
+    "static/media/BubamaraFront.6a1020cc.png": "/PersonalSite-React/static/media/BubamaraFront.6a1020cc.png",
+    "static/media/Me.74060ecd.png": "/PersonalSite-React/static/media/Me.74060ecd.png",
+    "static/media/NucampCards.fda4534e.png": "/PersonalSite-React/static/media/NucampCards.fda4534e.png",
+    "static/media/PersonalFront.2f4996dd.png": "/PersonalSite-React/static/media/PersonalFront.2f4996dd.png",
+    "static/media/font-awesome.min.css": "/PersonalSite-React/static/media/fontawesome-webfont.f691f37e.woff",
+    "static/media/logo.0a19fb60.png": "/PersonalSite-React/static/media/logo.0a19fb60.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c10afdb9.js",
+    "static/css/2.540a705e.chunk.css",
+    "static/js/2.3014e4b8.chunk.js",
+    "static/css/main.12287b01.chunk.css",
+    "static/js/main.d6eb095e.chunk.js"
+  ]
+}
