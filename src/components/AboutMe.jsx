@@ -43,36 +43,36 @@ function AboutMe() {
               <h1 className="skills-col-fe">Front-end</h1>
               <div className="row">
                 <div className="item">
-                  <img src="./icons/icon_html.svg" alt="html" className="languageImage"/>
+                  <img src="/icons/icon_html.png" alt="html" className="languageImage"/>
                   <h2>NodeJs</h2>
                 </div>
 
                 <div className="item">
-                  <img src="./icons/icon_css.svg" alt="css3" className="languageImage"/>
+                  <img src="/icons/icon_css.png" alt="css3" className="languageImage"/>
                   <h2>CSS</h2>
                 </div>
               </div>
 
               <div className="row">
                 <div className="item">
-                  <img src="./icons/icon_javascript.svg" alt="js" className="languageImage"/>
+                  <img src="/icons/icon_javascript.png" alt="js" className="languageImage"/>
                   <h2>JavaScript</h2>
                 </div>
               </div>
               <div className="row">
                 <div className="item">
-                  <img src="./icons/icon_react.svg" alt="react" className="languageImage"/>
+                  <img src="/icons/icon_react.png" alt="react" className="languageImage"/>
                   <h2>React</h2>
                 </div>
 
                 <div className="item">
-                  <img src="./icons/icon_redux.svg" alt="redux" className="languageImage"/>
+                  <img src="/icons/icon_redux.png" alt="redux" className="languageImage"/>
                   <h2>Redux</h2>
                 </div>
               </div>
               <div className="row">
                 <div className="item">
-                  <img src="./icons/icon_sass.svg" alt="scss" className="languageImage"/>
+                  <img src="/icons/icon_sass.png" alt="scss" className="languageImage"/>
                   <h2>SASS</h2>
                 </div>
               </div>
@@ -85,37 +85,37 @@ function AboutMe() {
               <h1 className="skills-col-fe">Back-end</h1>
               <div className="row">
                 <div className="item">
-                  <img src="./icons/icon_nodejs.svg" alt="nodejs" className="languageImage"/>
+                  <img src="/icons/icon_nodejs.png" alt="nodejs" className="languageImage"/>
                   <h2>NodeJs</h2>
                 </div>
 
                 <div className="item">
-                  <img src="./icons/icon_express.svg" alt="express" className="languageImage"/>
+                  <img src="/icons/icon_express.png" alt="express" className="languageImage"/>
                   <h2>Express</h2>
                 </div>
               </div>
 
               <div className="row">
                 <div className="item">
-                  <img src="./icons/icon_mongodb.svg" alt="mongodb" className="languageImage"/>
+                  <img src="/icons/icon_mongodb.png" alt="mongodb" className="languageImage"/>
                   <h2>MongoDB</h2>
                 </div>
               </div>
               <h1 className="skills-col-fe">Technologies</h1>
               <div className="row">
                 <div className="item">
-                  <img src="./icons/icon_git.svg" alt="git" className="languageImage"/>
+                  <img src="/icons/icon_git.png" alt="git" className="languageImage"/>
                   <h2>Git</h2>
                 </div>
 
                 <div className="item">
-                  <img src="./icons/icon_github.svg" alt="github" className="languageImage" />
+                  <img src="/icons/icon_github.png" alt="github" className="languageImage" />
                   <h2>GitHub</h2>
                 </div>
               </div>
               <div className="row">
                 <div className="item">
-                  <img src="./icons/icon_webpack.svg" alt="webpack" className="languageImage"/>
+                  <img src="/icons/icon_webpack.png" alt="webpack" className="languageImage"/>
                   <h2>Webpack</h2>
                 </div>
               </div>
