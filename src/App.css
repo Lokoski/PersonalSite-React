@@ -220,15 +220,15 @@ body {
   display:flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1.5rem;
+  margin-top: 1.25rem;
 }
 
 .profile-pic {
-    width: 16rem;
+    width: 15rem;
     border-radius: 50%;
     padding: .3rem;
     border: 1px solid var(--primary-red);
-    
+    margin-bottom: 1rem;
 }
 
 .about-heading {

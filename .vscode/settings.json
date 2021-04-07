@@ -5,6 +5,7 @@
         "fontawesome",
         "fortawesome",
         "popupbox",
-        "predeploy"
+        "predeploy",
+        "tsparticles"
     ]
 }
