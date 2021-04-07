@@ -31,7 +31,7 @@ body {
 }
 
 .main {
-  background: var(--primary-red);
+  background: var(--primary-black);
 }
 /******** NAVBAR STYLES ********/
 .nav-link {
