@@ -44,7 +44,7 @@ function AboutMe() {
               <div className="row">
                 <div className="item">
                   <img src="/icons/icon_html.png" alt="html" className="languageImage"/>
-                  <h2>NodeJs</h2>
+                  <h2>HTML</h2>
                 </div>
 
                 <div className="item">
