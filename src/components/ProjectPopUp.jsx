@@ -18,7 +18,9 @@ export const openPersonal = () => {
         <b>GitHub:</b> 
         <a 
             className="hyperlink" 
-            onClick={() => window.open('https://github.com/Lokoski/PersonalSite-React', '_blank')}>
+            onClick={() => window.open('https://github.com/Lokoski/PersonalSite-React', '_blank')}
+            href="https://github.com/Lokoski/PersonalSite-React"
+            >
             My Personal Website
         </a>
         </>
@@ -35,7 +37,9 @@ export const openNucamp = () => {
         <b>GitHub:</b> 
         <a 
             className="hyperlink" 
-            onClick={() => window.open('https://github.com/Lokoski/Nucamp-React/', '_blank')}>
+            onClick={() => window.open('https://github.com/Lokoski/Nucamp-React/', '_blank')}
+            href="https://github.com/Lokoski/Nucamp-React/"
+            >
             Nucampsite Build With React
         </a>
         </>
@@ -57,7 +61,9 @@ export const openBubamara = () => {
         <b>GitHub:</b> 
         <a 
             className="hyperlink" 
-            onClick={() => window.open('https://github.com/Lokoski/CafeBubamara', '_blank')}>
+            onClick={() => window.open('https://github.com/Lokoski/CafeBubamara', '_blank')}
+            href="https://github.com/Lokoski/CafeBubamara"
+            >
             Cafe Bubamara
         </a>
         </>
