@@ -3,10 +3,13 @@ import Home from './HomePage';
 import ContactMe from './ContactMe';
 import Footer from './Footer';
 //import Navbar from './Navbar'
-import Portfolio from './Portfolio';
+//import Portfolio from './Portfolio';
 import Particles from 'react-particles-js'
 import AboutMe from './AboutMe'
 import ReactstrapNav from './ReactstrapNav'
+import Projects from './Projects'
+
+
 
 
 
@@ -16,7 +19,7 @@ import ReactstrapNav from './ReactstrapNav'
 const Main = () => {
 
     return(
-        <div className="main">
+        <main className="main">
                 <Particles 
                     params={{ 
                         particles:{
@@ -56,10 +59,11 @@ const Main = () => {
                 <ReactstrapNav />
                 <Home />
                 <AboutMe />
-                <Portfolio />
+                {/* <Portfolio /> */}
+                <Projects />
                 <ContactMe />
                 <Footer />
-        </div>
+        </main>
     )
 }
 

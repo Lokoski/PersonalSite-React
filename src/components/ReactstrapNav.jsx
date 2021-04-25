@@ -73,7 +73,7 @@ export default function ReactstrapNav() {
                 </Nav.Link>
               </li>
               <li className="nav-item">
-                <Nav.Link eventKey="3" className="nav-link" href="#projects">
+                <Nav.Link eventKey="3" className="nav-link" href="#projects" offset={-100}>
                   Projects
                 </Nav.Link>
               </li>

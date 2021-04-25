@@ -13,7 +13,7 @@ import { faSearchPlus } from '@fortawesome/free-solid-svg-icons'
 import { PopupboxContainer } from 'react-popupbox'
 import 'react-popupbox/dist/react-popupbox.css'
 
-import { openPersonal, openNucamp, openBubamara, popupboxConfig } from './ProjectPopUp'
+import { openPersonal, openNucamp, openBubamara, popupboxConfigMyWebsite,} from './ProjectPopUp'
 
 function Portfolio() {
 
@@ -28,6 +28,7 @@ function Portfolio() {
                         <img src={PersonalSite} alt="portfolioimage" className="portfolio-image"/>
                         <div className="overflow"></div>
                         <FontAwesomeIcon className='portfolio-icon 'icon={faSearchPlus} />
+                       
                 </div>
                 {/*---*/}
                     <div className="portfolio-image-box" onClick={openBubamara}>
@@ -46,10 +47,11 @@ function Portfolio() {
                         <img src={PersonalSite} alt="nucamp" className="portfolio-image"/>
                         <div className="overflow"></div>
                         <FontAwesomeIcon className='portfolio-icon 'icon={faSearchPlus} />
+
                     </div>
                 </div>
             </div>
-            <PopupboxContainer {...popupboxConfig} />
+            <PopupboxContainer {...popupboxConfigMyWebsite} />
         </div>
     )
 }

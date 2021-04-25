@@ -32,8 +32,8 @@ export const openPersonal = () => {
 export const openNucamp = () => {
     const content = (
         <>
-        <img className='portfolio-image-popup' src={NucampCard} alt='personal site' />
-        <p>This is the website you are currently on. It was build with ReactJs, Bootstrap and few different packages. <br/>It is fully responsive with any mobile device!</p>
+        <img className='portfolio-image-popup' src={NucampCard} alt='nucamp site' />
+        <p>This website was build as a project at the bootcamp I attended. It is build with ReactJs, Redux, Bootstrap and few different packages. <br/>It is fully responsive with any mobile device!</p>
         <b>GitHub:</b> 
         <a 
             className="hyperlink" 
@@ -52,10 +52,10 @@ export const openBubamara = () => {
     const content = (
         <>
         <div>
-        <img className='portfolio-image-popup ' src={BubamaraFront} alt='personal site' />
+        <img className='portfolio-image-popup ' src={BubamaraFront} alt='bubamara site' />
         </div>
         <div>
-        <p>This is the website you are currently on. It was build with ReactJs, Bootstrap and few different packages. <br/>It is fully responsive with any mobile device!</p>
+        <p>I built this website for a restaurant. It is built with HTML, CSS and Bootstrap 4. <br/>It is fully responsive with any mobile device!</p>
         </div>
         
         <b>GitHub:</b> 
@@ -72,10 +72,10 @@ export const openBubamara = () => {
 }
 
 
-export const popupboxConfig = {
+export const popupboxConfigMyWebsite = {
     titleBar: {
         enable:true,
-        text:"Personal Website Project"
+        text:"My Website"
     },
     fadeIn: true,
     fadeInSpeed:500

@@ -1,5 +1,5 @@
 import React from "react";
-import picture from "../img/Me2.png";
+import picture from "../img/profile.jpeg";
 import html from "../img/icons/icon_html.png"
 import sass from "../img/icons/icon_sass.png"
 import js from "../img/icons/icon_javascript.png"

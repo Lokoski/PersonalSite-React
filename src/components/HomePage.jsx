@@ -39,11 +39,11 @@ const HeaderComponent = () => {
                 <Typed
                     className="typed"
                     strings={["Welcome to my website","I'm a full-stack web developer"]}
-                    typeSpeed={60}
-                    backSpeed={70}
+                    typeSpeed={80}
+                    backSpeed={90}
                     backDelay={2000}
                 />
-                <Link to='projects' offset={-50} smooth={true} href="#" className="btn-portfolio">View my work</Link>
+                <Link to='projects' offset={-80} smooth={true} href="#" className="btn-portfolio">View my work</Link>
             </div>
         </div>
     )
