@@ -857,7 +857,7 @@ textarea.form-control {
     width: 45%;
     top: 30%;
     left: 50%;
-    height: 76%;
+    height: 90%;
     background-color: var(--primary-gray);
     z-index: 101;
     transform: translate(-50%,-30%);
