@@ -29,7 +29,7 @@ const HeaderComponent = () => {
                 target="_blank"
                 rel="noreferrer"
                 className="btn btn-social-icon btn-twitter icon-hover"
-                href="http://twitter.com/lokoski"
+                href="http://twitter.com/alexlokoski"
             >
             <i className="fa fa-twitter fa-3x " />
             </a>{" "}
