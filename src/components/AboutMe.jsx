@@ -27,7 +27,7 @@ function AboutMe() {
         <div className="col-lg-5 col-xm-12">
           <h1 className="about-heading">About Me</h1>
           <p className="about-p">
-            Hi, my name is Alex Lokoski and I’m a full stack developer! I was
+            Hi, my name is Aleksandar Lokoski and I’m a full stack developer! I was
             first introduced to coding while trying to create a website for my
             fitness business and I haven’t looked back since. I'm a curious,
             driven team player, who is always looking to improve. As a web
