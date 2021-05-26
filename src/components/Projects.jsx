@@ -185,7 +185,7 @@ const Projects = () => {
                   <li>This is my personal website and you are currently on it! It is fully
                     responsive on all mobile devices.</li>
                   <li>
-                    Developed with ReactJs, CSS3, Bootstrap and Webpack. 
+                    Developed with ReactJs, CSS3 and Bootstrap 4. 
                   </li>
                 </ul>
               </div>
@@ -220,16 +220,16 @@ const Projects = () => {
                   <li>This is a simple weather app I created to practice working with APIs. It is fully
                     responsive on all mobile devices.</li>
                   <li>
-                    Developed with ReactJs, CSS3, the OpenWeatherMap API  and Webpack.
+                    Developed with ReactJs, CSS3 and the OpenWeatherMap API.
                   </li>
                 </ul>
               </div>
               <div className="modal-bottom">
               <a href="https://github.com/Lokoski/WeatherApp" target="_blank" rel="noreferrer">
-                  <h3>Go to GitHub</h3>
+                  <h3 style={{marginRight : "3rem"}}>Go to GitHub</h3>
                 </a>
                 <a href="https://weather22.netlify.app" target="_blank" rel="noreferrer">
-                  <h3>Live demo</h3>
+                  <h3 style={{marginRight : "3rem"}}>Live demo</h3>
                 </a>
                 <p
                   className="close-icon"
