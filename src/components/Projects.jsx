@@ -14,6 +14,48 @@ const Projects = () => {
               Projects
             </h1>
             <div className="row my-5">
+            <div className={"personal-site col-12 col-sm-12 col-md-5 "}>
+                <div className="overlay">
+                  <div className="text">
+                    <h2>Personal Website</h2>
+                  </div>
+                  <div>
+                    <button
+                      className="project-button"
+                      onClick={() => {
+                        var modalBG = document.getElementById("gallery-card");
+                        var todoModal = document.getElementById("personal");
+                        modalBG.style.display = "block";
+                        todoModal.style.display = "block";
+                      }}
+                    >
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+              
+              <div className={"weather col-12 col-sm-12 col-md-5 "}>
+                <div className="overlay">
+                  <div className="text">
+                    <h2>Weather App</h2>
+                  </div>
+                  <div>
+                    <button
+                      className="project-button"
+                      onClick={() => {
+                        var modalBG = document.getElementById("gallery-card");
+                        var weatherModal = document.getElementById("weather-app");
+                        modalBG.style.display = "block";
+                        weatherModal.style.display = "block";
+                      }}
+                    >
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+              
               <div className={"bubamara col-12 col-sm-12 col-md-5"}>
                 <div className="overlay">
                   <div className="text">
@@ -47,46 +89,6 @@ const Projects = () => {
                         var nucampModal = document.getElementById("nucamp");
                         modalBG.style.display = "block";
                         nucampModal.style.display = "block";
-                      }}
-                    >
-                      Learn More
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div className={"personal-site col-12 col-sm-12 col-md-5 "}>
-                <div className="overlay">
-                  <div className="text">
-                    <h2>Personal Website</h2>
-                  </div>
-                  <div>
-                    <button
-                      className="project-button"
-                      onClick={() => {
-                        var modalBG = document.getElementById("gallery-card");
-                        var todoModal = document.getElementById("personal");
-                        modalBG.style.display = "block";
-                        todoModal.style.display = "block";
-                      }}
-                    >
-                      Learn More
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div className={"weather col-12 col-sm-12 col-md-5 "}>
-                <div className="overlay">
-                  <div className="text">
-                    <h2>Weather App</h2>
-                  </div>
-                  <div>
-                    <button
-                      className="project-button"
-                      onClick={() => {
-                        var modalBG = document.getElementById("gallery-card");
-                        var weatherModal = document.getElementById("weather-app");
-                        modalBG.style.display = "block";
-                        weatherModal.style.display = "block";
                       }}
                     >
                       Learn More
