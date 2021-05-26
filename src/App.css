@@ -80,7 +80,6 @@
   z-index: 2;
 }
 
-
 .navbar-nav > li > a {
   color: var(--primary-red)!important; /* how to override bootstrap */
   margin: 0 12px;
@@ -98,13 +97,14 @@
   z-index: 2;
 }
 .navbar-nav > li > a:hover {
-  border-bottom: 2px solid  var(--primary-red);
+  border-bottom: 1px solid  var(--primary-red);
 }
 
 .icon-hover:hover{
   transform: scale(1.4);
   transition: all 0.5s ease-in-out;
 }
+
 .main-info{
   display:flex;
   /* position: absolute; */
@@ -120,6 +120,7 @@
   background:var(--primary-black);
   height: 100vh;
   margin-top: -2rem;
+  cursor: default;
 }
 
 .main-info h1 {
@@ -135,8 +136,9 @@
 
 .social-top > a {
   z-index: 2;
-  margin:0 1rem 0 0;
+  margin:0 1.25rem 0 0;
 }
+
 
 @media screen and (max-width:768px) {
   .main-info h1 {
@@ -153,7 +155,7 @@
 
 }
 
-@media screen and (max-width:900px){
+@media screen and (max-width:989px){
   .social-top > a {
     display: none;
   }
@@ -263,6 +265,10 @@
   font-size: 1rem;
 }
 
+.about-me{
+  cursor: default;
+}
+
 
 @media (max-width: 468px) {
   .profile-pic{
@@ -340,9 +346,6 @@
   width: 3rem;
 }
 
-
-
-
 .skills-col-fe {
   padding:20px;
   display:flex;
@@ -369,100 +372,6 @@
   list-style-type: none;
   padding: 0.75rem;
 }
-
-/******** PORTFOLIO STYLES ********/
-
-/* .portfolio-wrapper{
-  padding: 3rem 0;
-}
-
-.portfolio-header{
-color: var(--primary-red)
-}
-
-.portfolio-image{
- 
-  border: 1px solid var(--primary-red);
-  padding: 0.3rem;
-  margin: 0.75rem;
-  background-color: var(--primary-white)
-}
-
-.portfolio-image-box{
-  position:relative;
-  margin: 1rem;
-}
-
-@media screen and (max-width:920px){
-  .portfolio-image {
-    width: 95%;
-  }
-} */
-
-/******** OVERFLOW STYLES ********/
-
-/* .overflow {
-  position: absolute;
-  opacity: 0;
-  background: var(--primary-white);
-  width: 28rem;
-  height: 19rem;
-  top:0;
-  border: 1px solid var(--primary-red);
-  cursor: pointer;
-  padding: 0.3rem;
-  margin: 0.75rem;
-  width: 95%;
-}
-
-.portfolio-image-box:hover .overflow{
-  opacity: 50%;
-  transition: 0.3s ease-in-out
-}
-
-.portfolio-icon {
-  position:absolute;
-  opacity: 0;
-  margin-left: -16rem;
-  margin-top: 9rem;
-  color: var(--primary-red);
-  font-size: 1.5rem;
-}
-
-.portfolio-image-box:hover .portfolio-icon{
-  opacity: 70%;
-  transition: 0.3s ease-in-out;
-  cursor: pointer;
-} */
-
-/******** POPUP STYLES ********/
-
-/* .portfolio-image-popup {
-  width: 45rem;
-  height: 35rem;
-  margin-left: 3rem;
-}
-
-@media screen and (max-width:980px){
-  .portfolio-image-popup {
-    width: 21rem;
-    height: 10rem;
-    margin: 0;
-  }
-
-
-}
-
-.hyperlink {
-  cursor: pointer;
-  color: var(--primary-red)
-}
-
-.hyperlink:hover {
-  cursor: pointer;
-  color: var(--primary-black)
-} */
-
 
 /******** CONTACT STYLES ********/
 
@@ -609,9 +518,10 @@ textarea.form-control {
 }
 
 
-.fa {
+.fab, .fas {
   color: var(--primary-red);
 }
+
 
 .spin:hover {
     cursor: pointer; 
@@ -715,6 +625,7 @@ textarea.form-control {
       .item:hover{
         transform: scale(1.5);
         transition: all 0.7s ease-in-out;
+        cursor: pointer;
       }
 
       .item > h2 {
@@ -735,7 +646,7 @@ textarea.form-control {
 
 
 .bubamara { 
-    background-image: url("./img/Project-Imgs/Bubamara/BubamaraFront.png");
+    background-image: url("./img/Project-Imgs/Bubamara/BubamaraCafeFront.png");
     height: 400px;
     min-width: 300px;
     background-position: center;
@@ -746,7 +657,7 @@ textarea.form-control {
 }
 
 .nucamp { 
-    background-image: url("./img/Project-Imgs/Nucamp/NucampCards.png");
+    background-image: url("./img/Project-Imgs/Nucamp/NuCampFront.png");
     height: 400px;
     min-width: 300px;
     background-position: center;
@@ -756,7 +667,7 @@ textarea.form-control {
     border: 2px solid var(--primary-red);
   }
 .personal-site { 
-    background-image: url("./img/Project-Imgs/PersonalSite/PersonalFront.png");
+    background-image: url("./img/Project-Imgs/PersonalSite/PersonalSiteFront.png");
     height: 400px;
     min-width: 300px; 
     background-position: center;
@@ -767,7 +678,7 @@ textarea.form-control {
 }
 
 .weather { 
-  background-image: url("./img/Project-Imgs/WeatherApp/WeatherApp2.png") ;
+  background-image: url("./img/Project-Imgs/WeatherApp/WeatherFront.png") ;
   height: 400px;
   min-width: 300px; 
   background-position: center;
@@ -881,13 +792,27 @@ textarea.form-control {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 1.5rem;
+    padding: 5rem;
+}
+
+.modal-info > h2, a:hover {
+color: var(--primary-red);
+text-decoration: none;
 }
 
 .modal-bottom {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+.close-icon {
+  font-weight: 900;
+  font-size: 3rem;
+  cursor: pointer;
+  position: absolute;
+  bottom:0;
+  right:0;
+  margin-right: 2rem;
 }
 
 @media only screen and (max-width: 900px) {

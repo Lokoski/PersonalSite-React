@@ -24,7 +24,7 @@ function AboutMe() {
             <img className="profile-pic" src={picture} alt="me" />
           </div>
         </div>
-        <div className="col-lg-5 col-xm-12">
+        <div className="col-lg-5 col-xm-12 about-me">
           <h1 className="about-heading">About Me</h1>
           <p className="about-p">
             Hi, my name is Aleksandar Lokoski and I’m a full stack developer! I was

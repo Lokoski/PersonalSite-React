@@ -10,7 +10,7 @@ export default function ReactstrapNav() {
   //Navbar shows up on scroll
 
   useEffect(() => {
-    window.addEventListener("scroll", (e) => {
+    window.addEventListener("scroll", () => {
       if (stuck === false) {
         if (window.pageYOffset > 715) {
           setStuck(true);
@@ -38,7 +38,7 @@ export default function ReactstrapNav() {
               left: "0",
               background: "#000",
               opacity: "1",
-              height: "8%",
+              height: "10%",
               transition: ".3s ease-in-out",
               padding: "0 10px",
               color: "#000",
@@ -47,8 +47,8 @@ export default function ReactstrapNav() {
       }
     >
       <div className="container">
-        <Navbar.Brand to="home" smooth={true} className="navbar-brand" href="#">
-          <img href="/home" className="logo" src={logo} alt="logo" />
+        <Navbar.Brand href="home">
+          <img className="logo" src={logo} alt="logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav">
           <span>
@@ -73,7 +73,7 @@ export default function ReactstrapNav() {
                 </Nav.Link>
               </li>
               <li className="nav-item">
-                <Nav.Link eventKey="3" className="nav-link" href="#projects" offset={-100}>
+                <Nav.Link eventKey="3" className="nav-link" href="#projects">
                   Projects
                 </Nav.Link>
               </li>

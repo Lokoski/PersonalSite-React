@@ -1,8 +1,8 @@
 import React from "react";
-import Bubamara from "../img/Project-Imgs/Bubamara/BubamaraFront.png";
-import Nucamp from "../img/Project-Imgs/Nucamp/NucampCards.png";
-import PersonalSite from "../img/Project-Imgs/PersonalSite/PersonalFront.png";
-import WeatherApp from "../img/Project-Imgs/WeatherApp/WeatherApp.png"
+import Bubamara from "../img/Project-Imgs/Bubamara/BubamaraCafeFront.png";
+import Nucamp from "../img/Project-Imgs/Nucamp/NuCampFront.png";
+import PersonalSite from "../img/Project-Imgs/PersonalSite/PersonalSiteFront.png";
+import WeatherApp from "../img/Project-Imgs/WeatherApp/WeatherFront.png"
 
 const Projects = () => {
 
@@ -125,12 +125,6 @@ const Projects = () => {
                 </a>
                 <p
                   className="close-icon"
-                  style={{
-                    textAlign: "right",
-                    fontWeight: 900,
-                    fontSize: 3 + "rem",
-                    cursor: "pointer",
-                  }}
                   onClick={() => {
                     var modalBG = document.getElementById("gallery-card");
                     var bubamaraModal = document.getElementById("bubamara");
@@ -149,7 +143,7 @@ const Projects = () => {
               <img src={Nucamp} alt="" />
             </div>
             <div className="modal-info">
-              <h2>NuCamp Campsite</h2>
+              <h2 >NuCamp Campsite</h2>
               <div className="modal-description">
                 <ul>
                   <li>
@@ -167,12 +161,6 @@ const Projects = () => {
                 </a>
                 <p
                   className="close-icon"
-                  style={{
-                    textAlign: "right",
-                    fontWeight: 900,
-                    fontSize: 3 + "rem",
-                    cursor: "pointer",
-                  }}
                   onClick={() => {
                     var modalBG = document.getElementById("gallery-card");
                     var nucampModal = document.getElementById("nucamp");
@@ -207,12 +195,6 @@ const Projects = () => {
                 </a>
                 <p
                   className="close-icon"
-                  style={{
-                    textAlign: "right",
-                    fontWeight: 900,
-                    fontSize: 3 + "rem",
-                    cursor: "pointer",
-                  }}
                   onClick={() => {
                     var modalBG = document.getElementById("gallery-card");
                     var personalModal = document.getElementById("personal");
@@ -251,12 +233,6 @@ const Projects = () => {
                 </a>
                 <p
                   className="close-icon"
-                  style={{
-                    textAlign: "right",
-                    fontWeight: 900,
-                    fontSize: 3 + "rem",
-                    cursor: "pointer",
-                  }}
                   onClick={() => {
                     var modalBG = document.getElementById("gallery-card");
                     var weatherModal = document.getElementById("weather-app");

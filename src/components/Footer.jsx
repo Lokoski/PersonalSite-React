@@ -7,31 +7,40 @@ function Footer() {
       <div className="container">
       <div className="break-line mt-3"></div>
         <div className="row pt-3 footer-row d-flex justify-content-around">
+        <a
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-social-icon btn-file col-sm"
+              href="https://drive.google.com/file/d/1H8qefOcJ3GM0siSkv6UlNkJ2qGpnzWup/view?usp=sharing"
+            >
+              <i className="fas fa-file-alt fa-3x spin" />
+            </a>
+            {" "}
             <a
               target="_blank"
               rel="noreferrer"
-              className="btn btn-social-icon btn-linkedin col-md col-sm-12"
+              className="btn btn-social-icon btn-linkedin col-sm"
               href="https://www.linkedin.com/in/alexlokoski/"
             >
-              <i className="fa fa-linkedin fa-3x spin" />
+              <i className="fab fa-linkedin fa-3x spin" />
             </a>
             {" "}
             <a
               target="_blank"
               rel="noreferrer"
-              className="btn btn-social-icon btn-github col-md col-sm-12"
+              className="btn btn-social-icon btn-github col-sm"
               href="http://github.com/lokoski"
             >
-              <i className="fa fa-github fa-3x spin" />
+              <i className="fab fa-github fa-3x spin" />
             </a>
             {" "}
             <a
               target="_blank"
               rel="noreferrer"
-              className="btn btn-social-icon btn-twitter col-md col-sm-12"
+              className="btn btn-social-icon btn-twitter col-sm"
               href="http://twitter.com/alexlokoski"
             >
-              <i className="fa fa-twitter fa-3x spin" />
+              <i className="fab fa-twitter fa-3x spin" />
             </a>{" "}
           </div>
           <p className="p-4 text-center">
