@@ -29,11 +29,11 @@ function AboutMe() {
           <p className="about-p">
             Hi, my name is Aleksandar Lokoski and I’m a full stack developer! I was
             first introduced to coding while trying to create a website for my
-            fitness business and I haven’t looked back since. I'm a curious,
+            fitness business and I haven't looked back since. I'm a curious,
             driven team player, who is always looking to improve. As a web
             developer, I have experience working with JavaScript, ReactJS, Redux,
-            HTML, CSS, Sass, Bootstrap, and React-native for the front end. I'm also
-            comfortable with NodeJS, Express and MongoDB for back end development. 
+            HTML, CSS, Sass and Bootstrap for the front end, and React Native for mobile developer.
+            I'm also comfortable with NodeJS, Express and MongoDB for back end development. 
             <br/>
             <br/>
                 Outside of coding, I’m that
