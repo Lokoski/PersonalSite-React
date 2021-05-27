@@ -47,7 +47,7 @@ export default function ReactstrapNav() {
       }
     >
       <div className="container">
-        <Navbar.Brand href="home">
+        <Navbar.Brand href="#home">
           <img className="logo" src={logo} alt="logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav">
