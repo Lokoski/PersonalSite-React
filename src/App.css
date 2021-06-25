@@ -688,6 +688,28 @@ textarea.form-control {
   border: 2px solid var(--primary-red);
 }
 
+.todo { 
+  background-image: url("./img/Project-Imgs/ToDoApp/Todo.png") ;
+  height: 400px;
+  min-width: 300px; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 40px;
+  border: 2px solid var(--primary-red);
+}
+
+.calculator { 
+  background-image: url("./img/Project-Imgs/Calculator/Calculator.png") ;
+  height: 400px;
+  min-width: 300px; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 40px;
+  border: 2px solid var(--primary-red);
+}
+
 .mytext {
     font-size: 1.2rem;
 }
@@ -743,7 +765,7 @@ textarea.form-control {
     color: var(--primary-white);
 }
 
-.nucamp:hover .overlay, .bubamara:hover .overlay, .personal-site:hover .overlay, .weather:hover .overlay {
+.nucamp:hover .overlay, .bubamara:hover .overlay, .personal-site:hover .overlay, .weather:hover .overlay, .todo:hover .overlay, .calculator:hover .overlay {
     opacity: .7;
     background: var(--primary-gray);
 }

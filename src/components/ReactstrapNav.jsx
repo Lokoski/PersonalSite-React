@@ -80,7 +80,7 @@ export default function ReactstrapNav() {
               <li className="nav-item">
                 <Nav.Link
                   eventKey="4"
-                  smooth={true}
+                  smooth="true"
                   className="nav-link"
                   href="#contact"
                 >

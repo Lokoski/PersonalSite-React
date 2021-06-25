@@ -6,7 +6,6 @@ import AboutMe from './AboutMe'
 import ReactstrapNav from './ReactstrapNav'
 import Projects from './Projects'
 
-
 const Main = () => {
 
     return(
@@ -17,6 +16,7 @@ const Main = () => {
                 <Projects />
                 <ContactMe />
                 <Footer />
+                
         </main>
     )
 }

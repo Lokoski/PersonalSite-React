@@ -3,6 +3,9 @@ import Bubamara from "../img/Project-Imgs/Bubamara/BubamaraCafeFront.png";
 import Nucamp from "../img/Project-Imgs/Nucamp/NuCampFront.png";
 import PersonalSite from "../img/Project-Imgs/PersonalSite/PersonalSiteFront.png";
 import WeatherApp from "../img/Project-Imgs/WeatherApp/WeatherFront.png"
+import Calculator from "../img/Project-Imgs/Calculator/Calculator.png"
+import Todo from "../img/Project-Imgs/ToDoApp/Todo.png"
+
 
 const Projects = () => {
 
@@ -24,9 +27,9 @@ const Projects = () => {
                       className="project-button"
                       onClick={() => {
                         var modalBG = document.getElementById("gallery-card");
-                        var todoModal = document.getElementById("personal");
+                        var personalModal = document.getElementById("personal");
                         modalBG.style.display = "block";
-                        todoModal.style.display = "block";
+                        personalModal.style.display = "block";
                       }}
                     >
                       Learn More
@@ -55,6 +58,48 @@ const Projects = () => {
                   </div>
                 </div>
               </div>
+
+              <div className={"calculator col-12 col-sm-12 col-md-5"}>
+                <div className="overlay">
+                  <div className="text">
+                    <h2>Calculator</h2>
+                  </div>
+                  <div>
+                    <button
+                      className="project-button"
+                      onClick={() => {
+                        var modalBG = document.getElementById("gallery-card");
+                        var calculatorModal = document.getElementById("calculator");
+                        modalBG.style.display = "block";
+                        calculatorModal.style.display = "block";
+                      }}
+                    >
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div className={"todo col-12 col-sm-12 col-md-5"}>
+                <div className="overlay">
+                  <div className="text">
+                    <h2>To Do App</h2>
+                  </div>
+                  <div>
+                    <button
+                      className="project-button"
+                      onClick={() => {
+                        var modalBG = document.getElementById("gallery-card");
+                        var todoModal = document.getElementById("todo");
+                        modalBG.style.display = "block";
+                        todoModal.style.display = "block";
+                      }}
+                    >
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
               
               <div className={"bubamara col-12 col-sm-12 col-md-5"}>
                 <div className="overlay">
@@ -66,9 +111,9 @@ const Projects = () => {
                       className="project-button"
                       onClick={() => {
                         var modalBG = document.getElementById("gallery-card");
-                        var marineModal = document.getElementById("bubamara");
+                        var bubamaraModal = document.getElementById("bubamara");
                         modalBG.style.display = "block";
-                        marineModal.style.display = "block";
+                        bubamaraModal.style.display = "block";
                       }}
                     >
                       Learn More
@@ -76,6 +121,7 @@ const Projects = () => {
                   </div>
                 </div>
               </div>
+
               <div className={"nucamp col-12 col-sm-12 col-md-5 "}>
                 <div className="overlay">
                   <div className="text">
@@ -176,6 +222,42 @@ const Projects = () => {
             </div>
           </div>
 
+          <div id="calculator" className="modal-card">
+            <div className="visual">
+              <img src={Calculator} alt="" />
+            </div>
+            <div className="modal-info">
+              <h2>Calculator</h2>
+              <div className="modal-description">
+                <ul>
+                  <li>
+                    This is a simple calculator app that I built while learning vanilla JavaScript. It is fully functional
+                      and mobile friendly.
+                  </li>
+                  <li>
+                    Developed with HTML5, CSS3 and vanilla JavaScript.
+                  </li>
+                </ul>
+              </div>
+              <div className="modal-bottom">
+                <a href="https://github.com/Lokoski/CalculatorJS" target="_blank" rel="noreferrer">
+                  <h3>Go to GitHub</h3>
+                </a>
+                <p
+                  className="close-icon"
+                  onClick={() => {
+                    var modalBG = document.getElementById("gallery-card");
+                    var calculatorModal = document.getElementById("calculator");
+                    modalBG.style.display = "none";
+                    calculatorModal.style.display = "none";
+                  }}
+                >
+                  &#10005;
+                </p>
+              </div>
+            </div>
+          </div>
+
           <div id="personal" className="modal-card">
             <div className="visual">
               <img src={PersonalSite} alt="" />
@@ -202,6 +284,40 @@ const Projects = () => {
                     var personalModal = document.getElementById("personal");
                     modalBG.style.display = "none";
                     personalModal.style.display = "none";
+                  }}
+                >
+                  &#10005;
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="todo" className="modal-card">
+            <div className="visual">
+              <img src={Todo} alt="" />
+            </div>
+            <div className="modal-info">
+              <h2>Todo App</h2>
+              <div className="modal-description">
+                <ul>
+                  <li>This is a To Do app that I built in the process of learning vanilla JavaScript.
+                  The app supports all CRUD operators.</li>
+                  <li>
+                    Developed with HTML5, CSS3 and vanilla JavaScript. 
+                  </li>
+                </ul>
+              </div>
+              <div className="modal-bottom">
+              <a href="https://github.com/Lokoski/ToDoJS-CRUD" target="_blank" rel="noreferrer">
+                  <h3>Go to GitHub</h3>
+                </a>
+                <p
+                  className="close-icon"
+                  onClick={() => {
+                    var modalBG = document.getElementById("gallery-card");
+                    var todoModal = document.getElementById("todo");
+                    modalBG.style.display = "none";
+                    todoModal.style.display = "none";
                   }}
                 >
                   &#10005;
