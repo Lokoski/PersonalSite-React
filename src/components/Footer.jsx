@@ -11,7 +11,7 @@ function Footer() {
               target="_blank"
               rel="noreferrer"
               className="btn btn-social-icon btn-file col-sm"
-              href="https://drive.google.com/file/d/1H8qefOcJ3GM0siSkv6UlNkJ2qGpnzWup/view?usp=sharing"
+              href="https://drive.google.com/file/d/1oL5Vbiaqx7n7fW8QQF0P9jUtQ98iG9W8/view?usp=sharing"
             >
               <i className="fas fa-file-alt fa-3x spin" />
             </a>
