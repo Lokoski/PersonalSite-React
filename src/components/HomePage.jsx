@@ -49,7 +49,7 @@ const HomePage = () => {
           target="_blank"
           rel="noreferrer"
           className="btn btn-social-icon icon-hover "
-          href="https://drive.google.com/file/d/1oL5Vbiaqx7n7fW8QQF0P9jUtQ98iG9W8/view?usp=sharing"
+          href="https://drive.google.com/file/d/1Xej3F-X7mPF354ypgvi0EnQ7upW7fCC0/view?usp=sharing"
         >
           <i className="fas fa-file-alt fa-3x"></i>
         </a>{" "}
